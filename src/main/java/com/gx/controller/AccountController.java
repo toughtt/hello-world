@@ -33,6 +33,7 @@ public class AccountController {
     @RequestMapping("/account/findAll")
     public String findAll(Model model){  //存数据， Model对象
         System.out.println("Controller表现层：查询所有账户...");
+        System.out.println("Controller表现层：查询所有账户...");
         // 调用service的方法
         List<Account> list = accountService.findAll();
         model.addAttribute("list",list);
